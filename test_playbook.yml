@@ -1,0 +1,11 @@
+- name: test
+  hosts: all
+  #become: true
+
+  tasks:
+
+    - name: test
+      mod_one:
+        repouri: "https://github.com/forkvidikon/pb.git"
+        projectdir: "/srv/scud"
+        projectsubdir: "scud-master"
